@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Counter</title>
+</head>
+<body>
+    <button id="myButton">Click me!</button>
+    <div id="myCount">0</div>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", myBtn);
+        let count = 0;
+        let countEl = document.getElementById("myCount");
+
+        function myBtn() {
+            count = count + 1;
+            countEl.innerText = count;
+        }
+    </script>
+</body>
+</html>
